@@ -23,3 +23,25 @@
 # Training Data
 
 • Data dictionary:
+
+| Name      | Modeling Role            | Measurement Level | Description                                     |
+|-----------|--------------------------|-------------------|-------------------------------------------------|
+| ID        | ID                       | int               | unique row indentifier                          |
+| LIMIT_BAL | input                    | float             | amount of previously awarded credit             |
+| SEX       | demographic information  | int               | 1 = male; 2 = female                            |
+| RACE      | demographic information  | int               | 1 = hispanic; 2 = black; 3 = white; 4 = asian   |
+| EDUCATION | demographic information  | int               | 1 = graduate school; 2 = university; 3 = high school; 4 = others |
+| MARRIAGE  | demographic information  | int               | 1 = married; 2 = single; 3 = others             |
+| AGE       | demographic information  | int               | age in years                                    |
+| Name      | Modeling Role  | Measurement Level | Description                                     |
+| Name      | Modeling Role  | Measurement Level | Description                                     |
+| Name      | Modeling Role  | Measurement Level | Description                                     |
+| Name      | Modeling Role  | Measurement Level | Description                                     |
+| Name      | Modeling Role  | Measurement Level | Description                                     |
+| Name      | Modeling Role  | Measurement Level | Description                                     |
+| Name      | Modeling Role  | Measurement Level | Description                                     |
+| Name      | Modeling Role  | Measurement Level | Description                                     |
+| Name      | Modeling Role  | Measurement Level | Description                                     |
+| Name      | Modeling Role  | Measurement Level | Description                                     |
+| Name      | Modeling Role  | Measurement Level | Description                                     |
+| Name      | Modeling Role  | Measurement Level | Description                                     |
