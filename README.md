@@ -10,7 +10,7 @@
 
 • License: MIT
 
-• Model implementation code: DNSC_6301_Example_Project.ipynb
+• Model implementation code: [DNSC_6301_Project.ipynb](https://github.com/Agnes-Ngue/Hello-world/blob/main/GWU_DNSC_6301_project.ipynb)
 
 # Intended Use
 
