@@ -56,6 +56,7 @@
 
 • Out-of-scope use cases: Any use beyond an educational example is out-of-scope.
 
+
 # Training Data
 
 • Data dictionary:
@@ -88,6 +89,18 @@
     
     * Validation rows: 7,500
     
+# Load and analyze data 
+
+• Determine the names of the columns in the training data (2 pts.) 
+
+• Determine whether any missing values exist in the training data (2 pts.) 
+
+• Calculate basic descriptive statistics for the data (2 pts.) 
+
+• Calculate a Pearson correlation matrix for the data (2 pts.)
+
+• Plot histograms for all the columns in the data (2 pts.)
+
 # Test Data
 
 • Source of test data: GWU Blackboard, email jphall@gwu.edu for more information
