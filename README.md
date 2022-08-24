@@ -12,6 +12,42 @@
 
 • Model implementation code: [DNSC_6301_Project.ipynb](https://github.com/Agnes-Ngue/Hello-world/blob/main/GWU_DNSC_6301_project.ipynb)
 
+• Model type
+
+• Information about training algorithms, parameters, fairness constraints or other applied approaches, and features
+
+• Paper or other resource for more information
+
+• Citation details
+
+• Where to send questions or comments about the model
+
+
+# Model details
+
+
+• Columns used as inputs in the final model: 'LIMIT_BAL', 'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1', 'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6', 'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
+
+• Column(s) used as target(s) in the final model: 'DELINQ_NEXT'
+
+• Type of model: Decision Tree
+
+• Software used to implement the model: Python, scikit-learn
+
+• Version of the modeling software: 0.22.2.post1
+
+• Hyperparameters or other settings of your model:
+
+    DecisionTreeClassifier   (ccp_alpha=0.0, class_weight=None, criterion='gini',
+                             max_depth=6, max_features=None, max_leaf_nodes=None,
+                             min_impurity_decrease=0.0, min_impurity_split=None,
+                             min_samples_leaf=1, min_samples_split=2,
+                             min_weight_fraction_leaf=0.0, presort='deprecated',
+                             random_state=12345, splitter='best')`
+                       
+
+
+
 # Intended Use
 
 • Primary intended uses: This model is an example probability of default classifier, with an example use case for determining eligibility for a credit line increase.
@@ -40,7 +76,7 @@
 | Name      | target  | int | whether a customer's next payment is delinquent (late), 1 = late; 0 = on-time   
 |
                                   
-• Source of training data: GWU Blackboard, email agnesdanielleflore.nguenda@gwmail.gwu.edu for more information
+• Source of training data: GWU Blackboard, email jphall@gwu.edu for more information
 
 
 • How training data was divided into training and validation data: 50% training, 25% validation, 25% test
