@@ -6,7 +6,7 @@
 
 • Model date: August, 2022
 
-• Model version: 1.0
+• Model version: 1.0.2
 
 • License: MIT
 
