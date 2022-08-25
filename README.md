@@ -147,6 +147,18 @@
 
 ![image](https://user-images.githubusercontent.com/111556214/186588790-fe0ed26c-fb99-411d-9893-30ac99cce9b7.png)
 
+# Training a decision tree model
+
+● Partition the data into training, validation, and test sets
+
+● Train a decision tree model (without using demographic variables) (Up to 6 pts.):
+
+○ Using validation-based early stopping and cross-validation (1 pt.) 
+
+○ Display an iteration plot (1 pt.) ○ Plot the decision tree (1 pt.)
+
+○ Display the test error (1 pt.)
+
 
 # Test Data
 
@@ -181,9 +193,8 @@
 
 • Correlation Heatmap       
 
-![image](https://user-images.githubusercontent.com/111556214/185877043-522d3e02-2dc6-4942-a4bb-08334c7f92f3.png)
 
-![![image](https://user-images.githubusercontent.com/111556214/186575609-18b8e494-6bb5-48b7-9eef-2b818c1081cc.png)
-]
+![image](https://user-images.githubusercontent.com/111556214/186575609-18b8e494-6bb5-48b7-9eef-2b818c1081cc.png)
+
 
     
