@@ -12,8 +12,6 @@
 
 • Model implementation code: [DNSC_6301_Project.ipynb](https://github.com/Agnes-Ngue/Hello-world/blob/main/GWU_DNSC_6301_project.ipynb)
 
-• Model type
-
 • Information about training algorithms, parameters, fairness constraints or other applied approaches, and features
 
 • Paper or other resource for more information
