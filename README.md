@@ -87,11 +87,18 @@
     
 # Load and analyze data 
 
-• Determine the names of the columns in the training data (2 pts.) 
+• Names of the columns in the training data
 
-• Determine whether any missing values exist in the training data (2 pts.) 
+        Index(['ID', 'LIMIT_BAL', 'SEX', 'RACE', 'EDUCATION', 'MARRIAGE', 'AGE',
+               'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
+               'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
+               'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6',
+               'DELINQ_NEXT'],
+              dtype='object')
 
-• Calculate basic descriptive statistics for the data (2 pts.) 
+• Determine whether any missing values exist in the training data: 'there are no missing values'
+
+• calculate basic descriptive statistics for the data  
 
 • Calculate a Pearson correlation matrix for the data (2 pts.)
 
