@@ -100,6 +100,64 @@
 
 • calculate basic descriptive statistics for the data  
 
+Mean of data 
+
+ID              15000.500000
+
+LIMIT_BAL      167484.322667
+
+SEX                 1.603733
+
+RACE                2.721967
+
+EDUCATION           1.853133
+
+MARRIAGE            1.551867
+
+AGE                35.485500
+
+PAY_0              -0.016700
+
+PAY_2              -0.133767
+
+PAY_3              -0.166200
+
+PAY_4              -0.220667
+
+PAY_5              -0.266200
+
+PAY_6              -0.291100
+
+BILL_AMT1       51223.330900
+
+BILL_AMT2       49179.075167
+
+BILL_AMT3       47013.154800
+
+BILL_AMT4       43262.948967
+
+BILL_AMT5       40311.400967
+
+BILL_AMT6       38871.760400
+
+PAY_AMT1         5663.580500
+
+PAY_AMT2         5921.163500
+
+PAY_AMT3         5225.681500
+
+PAY_AMT4         4826.076867
+
+PAY_AMT5         4799.387633
+
+PAY_AMT6         5215.502567
+
+DELINQ_NEXT         0.221200
+
+dtype: float64
+
+https://colab.research.google.com/drive/1bu3Np96Rc4k4P2OypWgGRrdCfT4qtAWR?authuser=1#scrollTo=BEzB8Jll_bP-&line=1&uniqifier=1
+
 • Calculate a Pearson correlation matrix for the data (2 pts.)
 
 • Plot histograms for all the columns in the data (2 pts.)
