@@ -152,7 +152,9 @@
 ● Partition the data into training, validation, and test sets
 
 Training data: 15000 rows and 20 columns
+
 Validation data: 7500 rows and 20 columns
+
 Testing data: 7500 rows and 20 columns
 
 ● Train a decision tree model (without using demographic variables) (Up to 6 pts.):
