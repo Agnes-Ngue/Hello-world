@@ -159,7 +159,14 @@ Testing data: 7500 rows and 20 columns
 
 ○ Using validation-based early stopping and cross-validation (1 pt.) 
 
-○ Display an iteration plot (1 pt.) ○ Plot the decision tree (1 pt.)
+○ Display an iteration plot 
+
+![image](https://user-images.githubusercontent.com/111556214/186597967-896b0156-d2c6-4f1c-a017-f644408d19f8.png)
+
+
+○ Plot the decision tree 
+
+
 
 ○ Display the test error (1 pt.)
 
