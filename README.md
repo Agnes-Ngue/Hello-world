@@ -188,12 +188,12 @@ female-to-male AIR: 1.06
 
 * Describe potential negative impacts of using your model:
 
-   * Math or software problems 
+   * Math or software problems: 70% accuracy rate, which means a 30% errors 
    
-   * Real-world risks: who, what, when or how 
+   * Real-world risks: who, what, when or how: bias 
    
 * Describe potential uncertainties relating to the impacts of using your model:
  
-   * Math or software problems 
-   * Real-world risks: who, what, when or how? 
-*  Describe any unexpected or results
+   * Math or software problems: need for ongoing monitoring as we don't know how the model will function 
+   * Real-world risks: who, what, when or how? Data privacy and security  
+*  Describe any unexpected or results: no missing values and PAY_0 being too important
