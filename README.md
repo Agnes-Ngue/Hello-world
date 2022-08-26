@@ -2,15 +2,15 @@
 
 ### Basic Information
 
-* **Person or organization developing model: Agnes, agnes@gmc.com
+* Person or organization developing model: Agnes, agnes@gmc.com
 
-* ** Model date: August, 2022
+* Model date: August, 2022
 
-* ** Model version: 1.0.2
+* Model version: 1.0.2
 
-* ** License: MIT
+* License: MIT
 
-* ** Model implementation code: [DNSC_6301_Project.ipynb](https://github.com/Agnes-Ngue/Hello-world/blob/main/GWU_DNSC_6301_project.ipynb)
+* Model implementation code: [DNSC_6301_Project.ipynb](https://github.com/Agnes-Ngue/Hello-world/blob/main/GWU_DNSC_6301_project.ipynb)
 
 ### Intended Use
 * **Primary intended uses**: This model is an *example* probability of default classifier, with an *example* use case for determining eligibility for a credit line increase.
@@ -39,9 +39,9 @@
 | **PAY_AMT1 - PAY_AMT6** | inputs | float | amount of previous payment; PAY_AMT1 = amount paid in September, 2005; PAY_AMT2 = amount paid in August, 2005; ...; PAY_AMT6 = amount paid in April, 2005 |
 | **DELINQ_NEXT**| target | int | whether a customer's next payment is delinquent (late), 1 = late; 0 = on-time |
 
-* ** Source of training data: GWU Blackboard, email jphall@gwu.edu for more information
-* ** How training data was divided into training and validation data: 50% training, 25% validation, 25% test
-* **Number of rows in training and validation data**:
+* Source of training data: GWU Blackboard, email jphall@gwu.edu for more information
+* How training data was divided into training and validation data: 50% training, 25% validation, 25% test
+* Number of rows in training and validation data**:
   * Training rows: 15,000
   * Validation rows: 7,500
 
@@ -49,24 +49,24 @@
     
 ### Test Data
 
-* ** Source of test data: GWU Blackboard, email jphall@gwu.edu for more information
-* ** Number of rows in test data: 7,500
-* ** State any differences in columns between training and test data: None
+* Source of test data: GWU Blackboard, email jphall@gwu.edu for more information
+* Number of rows in test data: 7,500
+* State any differences in columns between training and test data: None
 
 
 
 ### Model details
 
 
-* **Columns used as inputs in the final model**: 'LIMIT_BAL',
+* Columns used as inputs in the final model**: 'LIMIT_BAL',
        'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
        'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
        'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
-* **Column(s) used as target(s) in the final model**: 'DELINQ_NEXT'
-* **Type of model**: Decision Tree 
-* **Software used to implement the model**: Python, scikit-learn
-* **Version of the modeling software**: 3.7.13, 1.0.2
-* **Hyperparameters or other settings of your model**: 
+* Column(s) used as target(s) in the final model**: 'DELINQ_NEXT'
+* Type of model**: Decision Tree 
+* Software used to implement the model**: Python, scikit-learn
+* Version of the modeling software**: 3.7.13, 1.0.2
+* Hyperparameters or other settings of your model**: 
 ```
 DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
                        max_depth=6, max_features=None, max_leaf_nodes=None,
@@ -83,21 +83,21 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 ![image](https://user-images.githubusercontent.com/111556214/186575609-18b8e494-6bb5-48b7-9eef-2b818c1081cc.png)
 
 
-* **Metrics used to evaluate your final model (AUC and AIR): confusion matrix
-* **State the final values, neatly -- as bullets or a table, of the metrics for all data: training, validation, and test data
-* **Provide any plots related to your data or final model -- be sure to label the plots!
+* Metrics used to evaluate your final model (AUC and AIR): confusion matrix
+* State the final values, neatly -- as bullets or a table, of the metrics for all data: training, validation, and test data
+* Provide any plots related to your data or final model -- be sure to label the plots!
 
 
 ### Ethical considerations
 
-* **Describe potential negative impacts of using your model:
+* Describe potential negative impacts of using your model:
 
    * Math or software problems 
    
    * Real-world risks: who, what, when or how 
    
-* **Describe potential uncertainties relating to the impacts of using your model:
+* Describe potential uncertainties relating to the impacts of using your model:
  
    * Math or software problems 
    * Real-world risks: who, what, when or how? 
-* ** Describe any unexpected or results
+*  Describe any unexpected or results
