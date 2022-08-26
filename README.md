@@ -2,7 +2,7 @@
 
 # Basic Information
 
-•Person or organization developing model: Agnes Danielle Flore Nguenda, agnesdanielleflore.nguenda@gwmail.gwu.edu
+•Person or organization developing model: Agnes, agnes@gmc.com
 
 • Model date: August, 2022
 
@@ -12,47 +12,16 @@
 
 • Model implementation code: [DNSC_6301_Project.ipynb](https://github.com/Agnes-Ngue/Hello-world/blob/main/GWU_DNSC_6301_project.ipynb)
 
-• Information about training algorithms, parameters, fairness constraints or other applied approaches, and features
+•Intended Use
 
-• Paper or other resource for more information
+    * Primary intended uses: This model is an example probability of default classifier, with an example use case for determining eligibility for a             credit line increase.
 
-• Citation details
+    * Primary intended users: Students in GWU DNSC 6301 bootcamp.
 
-• Where to send questions or comments about the model
-
-
-# Model details
-
-
-• Columns used as inputs in the final model: 'LIMIT_BAL', 'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1', 'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6', 'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
-
-• Column(s) used as target(s) in the final model: 'DELINQ_NEXT'
-
-• Type of model: Decision Tree
-
-• Software used to implement the model: Python, scikit-learn
-
-• Version of the modeling software: 0.22.2.post1
-
-• Hyperparameters or other settings of your model:
-
-    DecisionTreeClassifier   (ccp_alpha=0.0, class_weight=None, criterion='gini',
-                             max_depth=6, max_features=None, max_leaf_nodes=None,
-                             min_impurity_decrease=0.0, min_impurity_split=None,
-                             min_samples_leaf=1, min_samples_split=2,
-                             min_weight_fraction_leaf=0.0, presort='deprecated',
-                             random_state=12345, splitter='best')`
+    * Out-of-scope use cases: Any use beyond an educational example is out-of-scope.
                        
 
 
-
-# Intended Use
-
-• Primary intended uses: This model is an example probability of default classifier, with an example use case for determining eligibility for a credit line increase.
-
-• Primary intended users: Students in GWU DNSC 6301 bootcamp.
-
-• Out-of-scope use cases: Any use beyond an educational example is out-of-scope.
 
 
 # Training Data
@@ -85,6 +54,57 @@
     
     * Validation rows: 7,500
     
+    
+    
+    
+# Test Data
+
+• Source of test data: GWU Blackboard, email jphall@gwu.edu for more information
+
+• Number of rows in test data: 7,500
+
+• State any differences in columns between training and test data: None
+
+
+
+# Model details
+
+
+• Columns used as inputs in the final model: 'LIMIT_BAL', 'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1', 'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6', 'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
+
+• Column(s) used as target(s) in the final model: 'DELINQ_NEXT'
+
+• Type of model: Decision Tree
+
+• Software used to implement the model: Python, scikit-learn
+
+• Version of the modeling software: 0.22.2.post1
+
+• Hyperparameters or other settings of your model:
+
+    DecisionTreeClassifier   (ccp_alpha=0.0, class_weight=None, criterion='gini',
+                             max_depth=6, max_features=None, max_leaf_nodes=None,
+                             min_impurity_decrease=0.0, min_impurity_split=None,
+                             min_samples_leaf=1, min_samples_split=2,
+                             min_weight_fraction_leaf=0.0, presort='deprecated',
+                             random_state=12345, splitter='best')`
+
+
+# Quantitative Analysis
+
+• Correlation Heatmap       
+
+
+![image](https://user-images.githubusercontent.com/111556214/186575609-18b8e494-6bb5-48b7-9eef-2b818c1081cc.png)
+
+
+○ Metrics used to evaluate your final model (AUC and AIR): 
+
+○ State the final values, neatly -- as bullets or a table, of the metrics for all data: training, validation, and test data
+
+○ Provide any plots related to your data or final model -- be sure to label the plots!
+
+
 # Load and analyze data 
 
 • Names of the columns in the training data
@@ -170,37 +190,11 @@ Testing data: 7500 rows and 20 columns
 
 
 
-○ Display the test error (1 pt.)
+○ Display the test error 
 
 
-# Test Data
 
-• Source of test data: GWU Blackboard, email jphall@gwu.edu for more information
 
-• Number of rows in test data: 7,500
-
-• State any differences in columns between training and test data: None
-
-# Model details
-
-• Columns used as inputs in the final model: 'LIMIT_BAL', 'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1', 'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6', 'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
-
-• Column(s) used as target(s) in the final model: 'DELINQ_NEXT'
-
-• Type of model: Decision Tree
-
-• Software used to implement the model: Python, scikit-learn
-
-• Version of the modeling software: 0.22.2.post1
-
-• Hyperparameters or other settings of your model:
-
-    DecisionTreeClassifier   (ccp_alpha=0.0, class_weight=None, criterion='gini',
-                             max_depth=6, max_features=None, max_leaf_nodes=None,
-                             min_impurity_decrease=0.0, min_impurity_split=None,
-                             min_samples_leaf=1, min_samples_split=2,
-                             min_weight_fraction_leaf=0.0, presort='deprecated',
-                             random_state=12345, splitter='best')`
                        
 # Quantitative Analysis
 
