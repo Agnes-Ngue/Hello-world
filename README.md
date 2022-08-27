@@ -139,7 +139,7 @@ asian-to-white AIR: 1.00
 
 
 
-#### confusion matrices across sex groups
+#### confusion matrix across sex groups
 
 
 ```
