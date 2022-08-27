@@ -94,7 +94,7 @@ strong correlation between variables
 
 * **Metrics used to evaluate your final model (AUC and AIR)**: confusion matrix
 
-#### confusion matrices across race groups
+#### confusion matrix across race groups
 ```
 Confusion matrix by RACE=1
 
