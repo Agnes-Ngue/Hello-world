@@ -95,29 +95,29 @@ strong correlation between variables
 * **Metrics used to evaluate your final model (AUC and AIR)**: confusion matrix
 
 #### confusion matrices across race groups
-
-* Confusion matrix by RACE=1
+```
+Confusion matrix by RACE=1
 
                 actual: 1 actual: 0
      predicted: 1       447       387
      predicted: 0       139       501
      (Hispanic)
 
-* Confusion matrix by RACE=2
+Confusion matrix by RACE=2
              actual: 1 actual: 0
 predicted: 1       449       348
 predicted: 0       157       537
 (Black)
 
 
-* Confusion matrix by RACE=3
+Confusion matrix by RACE=3
              actual: 1 actual: 0
 predicted: 1       176       813
 predicted: 0        72      1228
 (White)
 
 
-* Confusion matrix by RACE=4
+Confusion matrix by RACE=4
              actual: 1 actual: 0
 predicted: 1       186       784
 predicted: 0        59      1217
@@ -135,17 +135,22 @@ black-to-white AIR: 0.82
 White proportion accepted: 0.568
 Asian proportion accepted: 0.568
 asian-to-white AIR: 1.00
+```
+
+
 
 #### confusion matrices across sex groups
 
-* Confusion matrix by SEX=1
+
+```
+Confusion matrix by SEX=1
              actual: 1 actual: 0
 predicted: 1       546       905
 predicted: 0       179      1292
 (Male)
 
 
-* Confusion matrix by SEX=2
+Confusion matrix by SEX=2
              actual: 1 actual: 0
 predicted: 1       712      1427
 predicted: 0       248      2191
@@ -155,6 +160,12 @@ predicted: 0       248      2191
 Male proportion accepted: 0.503
 Female proportion accepted: 0.533
 female-to-male AIR: 1.06
+```
+
+
+
+
+
 
 * **State the final values, neatly -- as bullets or a table, of the metrics for all data**: training, validation, and test data
 
