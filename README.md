@@ -282,9 +282,9 @@ predicted: 0        17       111
 
 * Describe potential negative impacts of using your model:
 
-   * Math or software problems: 70% accuracy rate, which means a 30% errors 
+   * Math or software problems: the higher the cut off is less discriminatory, the higher is the accuracy. So, for example having a 70% accuracy rate, which means a 30% errors, and less discrimination. 
    
-   * Real-world risks: who, what, when or how: bias 
+   * Real-world risks: who, what, when or how: Withe a cutoff less than 0.18, less Hispanic and black people will get the credit product.bias 
    
 * Describe potential uncertainties relating to the impacts of using your model:
  
