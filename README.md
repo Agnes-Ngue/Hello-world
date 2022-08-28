@@ -163,7 +163,47 @@ female-to-male AIR: 1.06
 ```
 
 
+#### confusion matrix across education groups
 
+```
+Confusion matrix by EDUCATION=1
+             actual: 1 actual: 0
+predicted: 1       367       766
+predicted: 0       144      1359
+(Graduate School)
+
+Confusion matrix by EDUCATION=2
+             actual: 1 actual: 0
+predicted: 1       640      1115
+predicted: 0       216      1551
+(University)
+
+Confusion matrix by EDUCATION=3
+             actual: 1 actual: 0
+predicted: 1       249       409
+predicted: 0        65       496
+(High School)
+
+Confusion matrix by EDUCATION=4
+             actual: 1 actual: 0
+predicted: 1         0         9
+predicted: 0         0        19
+(Others)
+
+Graduate School proportion accepted: 0.570
+University proportion accepted: 0.502
+university-to-graduate school AIR: 0.88
+
+Graduate School proportion accepted: 0.570
+High School proportion accepted: 0.460
+high school-to-graduate school AIR: 0.81
+
+Graduate School proportion accepted: 0.570
+Others proportion accepted: 0.679
+others-to-graduate school AIR: 1.19
+```
+
+#### confusion matrix across marriage groups
 
 
 
