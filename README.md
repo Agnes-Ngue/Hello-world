@@ -92,7 +92,7 @@ This means people in certain race groups are not getting as many as other people
 
 strong correlation between variables
 
-* **Metrics used to evaluate your final model (AUC and AIR)**: confusion matrix
+* **Metrics used to evaluate the final model (AUC and AIR)**: confusion matrix
 
 #### confusion matrix across race groups
 ```
@@ -271,7 +271,7 @@ predicted: 0        17       111
 
 
 
-* Provide any plots related to your data or final model -- be sure to label the plots!
+* Plots related to the data or final model 
 
 #### plot tree depth vs. training and validation AUC and AIR
 
