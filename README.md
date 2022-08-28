@@ -205,6 +205,39 @@ others-to-graduate school AIR: 1.19
 
 #### confusion matrix across marriage groups
 
+```
+Confusion matrix by MARRIAGE=1
+             actual: 1 actual: 0
+predicted: 1       593      1004
+predicted: 0       208      1573
+(Married)
+
+Confusion matrix by MARRIAGE=2
+             actual: 1 actual: 0
+predicted: 1       647      1293
+predicted: 0       213      1878
+(Single)
+
+Confusion matrix by MARRIAGE=3
+             actual: 1 actual: 0
+predicted: 1        17        30
+predicted: 0         6        29
+(Others)
+
+Married proportion accepted: 0.527
+Married proportion accepted: 0.527
+married-to-married AIR: 1.00
+
+Married proportion accepted: 0.527
+Single proportion accepted: 0.519
+single-to-married AIR: 0.98
+
+Married proportion accepted: 0.527
+Others proportion accepted: 0.427
+others-to-married AIR: 0.81
+```
+
+#### confusion matrix across age groups
 
 
 * **State the final values, neatly -- as bullets or a table, of the metrics for all data**: training, validation, and test data
