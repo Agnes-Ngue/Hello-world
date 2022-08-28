@@ -239,6 +239,17 @@ others-to-married AIR: 0.81
 
 #### confusion matrix across age groups
 
+```
+Confusion matrix by AGE=40
+             actual: 1 actual: 0
+predicted: 1        39        59
+predicted: 0        17       111
+(Age In Years)
+```
+
+
+
+
 
 * **State the final values, neatly -- as bullets or a table, of the metrics for all data**: training, validation, and test data
 
