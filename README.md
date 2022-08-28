@@ -275,7 +275,7 @@ predicted: 0        17       111
 
 #### plot tree depth vs. training and validation AUC and AIR
 
-![image](https://user-images.githubusercontent.com/111556214/187055639-6b97ea8f-c5e6-47e5-aaa2-ad058f9980d0.png)
+![image](https://user-images.githubusercontent.com/111556214/187081025-9ac59e61-a76d-4a03-a3ba-8f1734aac09b.png)
 
 
 ### Ethical considerations
