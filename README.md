@@ -66,6 +66,9 @@ DecisionTreeClassifier  {'ccp_alpha': 0.0,'class_weight': None,'criterion': 'gin
 
 ![image](https://user-images.githubusercontent.com/111556214/186575609-18b8e494-6bb5-48b7-9eef-2b818c1081cc.png)
 
+```
+Variables have a negative correlation because they move in opposite direction. 
+
 Please polish: One sentence description, Wider colors = positively correlated, darker colors = negatively correlated, So, when one variable goes up the other one goes down, i.e : there is a correlation between race and the outcome. There is a problem to figure out and fix. This means people in certain race groups are not getting as many as other people.
 
 
