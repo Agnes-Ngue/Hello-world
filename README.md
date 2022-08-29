@@ -102,8 +102,8 @@ With a depth-12, the model exhibits high perfomance and minimal bias: good trade
   
 * Describe potential uncertainties relating to the impacts of using your model:
 
-   * Math or software problems: Please polish: One sentence description, need for ongoing monitoring as we don't know how the model will function
-  
+   * Math or software problems: Please polish:  As potential uncertainties we have inaccurate information and model failure. 
+   
    * Real-world risks: who, what, when or how? Please polish: One sentence description, Data privacy and security 
   
 *  Describe any unexpected or results: Please polish: One sentence description, no missing values and PAY_0 being too important
