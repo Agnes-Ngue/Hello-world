@@ -106,7 +106,7 @@ With a depth-12, the model exhibits high perfomance and minimal bias: good trade
    
    * Real-world risks: who, what, when or how?  Using this model inaccurately may cause commercial or social chaos for both the company and the customers.
   
-*  Describe any unexpected or results: no missing values and PAY_0 being too important
+*  Describe any unexpected or results: Unrealistic result with no missing values and PAY_0 being too important.
 
 
 
