@@ -89,13 +89,14 @@ With a depth-12, the model exhibits high perfomance and minimal bias: good trade
 
 | Hispanic-to-White AIR | Black-to-White AIR | Asian-to-White AIR | Female-to-Male AIR |
 |-----------------------|--------------------|--------------------|--------------------|
-| | | | |
+| 0.83|  0.85| 1.00|1.02 |
 
 ### Ethical considerations
 
 * Describe potential negative impacts of using your model:
 
-   * Math or software problems: Please polish: One sentence description, 70% accuracy rate, which means a 30% errors
+   * Math or software problems: Please polish: the higher the cut off is less discriminatory, the higher is the accuracy. So, for example having a 70% accuracy rate, which means a 30% errors, and less discrimination. 
+  
   
    * Real-world risks: who, what, when or how: Please polish: One sentence description, bias
   
