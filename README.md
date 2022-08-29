@@ -3,23 +3,15 @@
 ### Basic Information
 
 * **Person or organization developing model**: Agnes, `agnes@gmc.com`
-
 * **Model date**: August, 2022
-
 * **Model version**: 1.0.2
-
 * **License**: MIT
-
 * **Model implementation code**: [DNSC_6301_Project.ipynb](https://github.com/Agnes-Ngue/Hello-world/blob/main/GWU_DNSC_6301_project.ipynb)
 
 ### Intended Use
 * **Primary intended uses**: This model is an *example* probability of default classifier, with an *example* use case for determining eligibility for a credit line increase.
 * **Primary intended users**: Students in GWU DNSC 6301 bootcamp.
 * **Out-of-scope use cases**: Any use beyond an educational example is out-of-scope.
-                       
-
-
-
 
 ### Training Data
 
@@ -44,238 +36,80 @@
 * **Number of rows in training and validation data**:
   * Training rows: 15,000
   * Validation rows: 7,500
-
-    
-    
+ 
 ### Test Data
 
 * **Source of test data**: GWU Blackboard, email jphall@gwu.edu for more information
 * **Number of rows in test data**: 7,500
 * **State any differences in columns between training and test data**: None
 
-
-
 ### Model details
-
 
 * **Columns used as inputs in the final model**: 'LIMIT_BAL',
        'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
        'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
        'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
 * **Column(s) used as target(s) in the final model**: 'DELINQ_NEXT'
-* **Type of model**: Decision Tree 
+* **Type of model**: Decision Tree
 * **Software used to implement the model**: Python, scikit-learn
 * **Version of the modeling software**: 3.7.13, 1.0.2
-* **Hyperparameters or other settings of your model**: 
+* **Hyperparameters or other settings of your model**:
 ```
 DecisionTreeClassifier  {'ccp_alpha': 0.0,'class_weight': None,'criterion': 'gini',
                          'max_depth': 12,'max_features': None,'max_leaf_nodes': None,
                          'min_impurity_decrease': 0.0,'min_samples_leaf': 1,'min_samples_split': 2,
                          'min_weight_fraction_leaf': 0.0,'random_state': 12345,'splitter': 'best'}
 ```
-
 ### Quantitative Analysis
 
 #### Correlation Heatmap
 
 ![image](https://user-images.githubusercontent.com/111556214/186575609-18b8e494-6bb5-48b7-9eef-2b818c1081cc.png)
 
-Wider colors = positively correlated
-
-darker colors = negatively correlated
-
-So, when one variable goes up the other one goes down
-
-i.e : there is a correlation between race and the outcome. There is a problem to figure out and fix.
-
-This means people in certain race groups are not getting as many as other people
-
-strong correlation between variables
-
-* **Metrics used to evaluate the final model (AUC and AIR)**: confusion matrix
-
-#### confusion matrix across race groups
-```
-Confusion matrix by RACE=1
-
-                actual: 1 actual: 0
-     predicted: 1       447       387
-     predicted: 0       139       501
-     (Hispanic)
-
-Confusion matrix by RACE=2
-             actual: 1 actual: 0
-predicted: 1       449       348
-predicted: 0       157       537
-(Black)
+Please polish: One sentence description, Wider colors = positively correlated, darker colors = negatively correlated, So, when one variable goes up the other one goes down, i.e : there is a correlation between race and the outcome. There is a problem to figure out and fix. This means people in certain race groups are not getting as many as other people.
 
 
-Confusion matrix by RACE=3
-             actual: 1 actual: 0
-predicted: 1       176       813
-predicted: 0        72      1228
-(White)
-
-
-Confusion matrix by RACE=4
-             actual: 1 actual: 0
-predicted: 1       186       784
-predicted: 0        59      1217
-(Asian)
-
-
-White proportion accepted: 0.568
-Hispanic proportion accepted: 0.434
-hispanic-to-white AIR: 0.76
-
-White proportion accepted: 0.568
-Black proportion accepted: 0.465
-black-to-white AIR: 0.82
-
-White proportion accepted: 0.568
-Asian proportion accepted: 0.568
-asian-to-white AIR: 1.00
-```
-
-
-
-#### confusion matrix across sex groups
-
-
-```
-Confusion matrix by SEX=1
-             actual: 1 actual: 0
-predicted: 1       546       905
-predicted: 0       179      1292
-(Male)
-
-
-Confusion matrix by SEX=2
-             actual: 1 actual: 0
-predicted: 1       712      1427
-predicted: 0       248      2191
-(Female)
-
-
-Male proportion accepted: 0.503
-Female proportion accepted: 0.533
-female-to-male AIR: 1.06
-```
-
-
-#### confusion matrix across education groups
-
-```
-Confusion matrix by EDUCATION=1
-             actual: 1 actual: 0
-predicted: 1       367       766
-predicted: 0       144      1359
-(Graduate School)
-
-Confusion matrix by EDUCATION=2
-             actual: 1 actual: 0
-predicted: 1       640      1115
-predicted: 0       216      1551
-(University)
-
-Confusion matrix by EDUCATION=3
-             actual: 1 actual: 0
-predicted: 1       249       409
-predicted: 0        65       496
-(High School)
-
-Confusion matrix by EDUCATION=4
-             actual: 1 actual: 0
-predicted: 1         0         9
-predicted: 0         0        19
-(Others)
-
-Graduate School proportion accepted: 0.570
-University proportion accepted: 0.502
-university-to-graduate school AIR: 0.88
-
-Graduate School proportion accepted: 0.570
-High School proportion accepted: 0.460
-high school-to-graduate school AIR: 0.81
-
-Graduate School proportion accepted: 0.570
-Others proportion accepted: 0.679
-others-to-graduate school AIR: 1.19
-```
-
-#### confusion matrix across marriage groups
-
-```
-Confusion matrix by MARRIAGE=1
-             actual: 1 actual: 0
-predicted: 1       593      1004
-predicted: 0       208      1573
-(Married)
-
-Confusion matrix by MARRIAGE=2
-             actual: 1 actual: 0
-predicted: 1       647      1293
-predicted: 0       213      1878
-(Single)
-
-Confusion matrix by MARRIAGE=3
-             actual: 1 actual: 0
-predicted: 1        17        30
-predicted: 0         6        29
-(Others)
-
-Married proportion accepted: 0.527
-Married proportion accepted: 0.527
-married-to-married AIR: 1.00
-
-Married proportion accepted: 0.527
-Single proportion accepted: 0.519
-single-to-married AIR: 0.98
-
-Married proportion accepted: 0.527
-Others proportion accepted: 0.427
-others-to-married AIR: 0.81
-```
-
-#### confusion matrix across age groups
-
-```
-Confusion matrix by AGE=40
-             actual: 1 actual: 0
-predicted: 1        39        59
-predicted: 0        17       111
-(Age In Years)
-```
-
-
-
-
-
-* **State the final values, neatly -- as bullets or a table, of the metrics for all data**: training, validation, and test data
-
-
-||	Training AUC|	Validation AUC|	Test AUC| 5-Fold SD| Hispanic-to-White AIR|
-|-|--------|------|-----|-----|-----|
-|1|	0.645748|	0.643880| 0.639065|	0.009275| 0.894148|
-|2	|0.699912|	0.687752	| 0.685590| 0.012626| 0.850871|
-|3|	0.742968	|0.729490	| 0.728666| 0.017375| 0.799546|
-|4|	0.757178	|0.741696| 0.737322| 0.017079| 0.792435|
-|5|	0.769331|	0.742480| 0.739600|	0.019886| 0.829336|
-|6|	0.783722|	0.749610| 0.743847|	0.017665| 0.833205|
-|7|	0.795777|	0.742115|	0.737266| 0.022466| 0.835886|
-|8|	0.807291|	0.739990| 0.734446|	0.015567| 0.811300|
-|9|	0.822913|	0.727224|	0.728575| 0.012042| 0.811561|
-|10	|0.838052|	0.720562|	0.714933| 0.013855| 0.803621|
-|11	|0.855168|	0.709864| 0.702163|	0.010405| 0.837806|
-|12|	0.874251|	0.688074|	0.682614| 0.00807| 0.844889|
-
-
-
-* Plots related to the data or final model 
-
-#### plot tree depth vs. training and validation AUC and AIR
+#### Iteration plot tree depth vs. training and validation AUC, and AIR
 
 ![image](https://user-images.githubusercontent.com/111556214/187081025-9ac59e61-a76d-4a03-a3ba-8f1734aac09b.png)
+
+Please polish: One sentence description, depth-6 tree is a good trade-off between best validation performance and best fairness.
+
+* Best Model AUC:
+
+| Training AUC | Validation AUC | Test AUC |
+|--------------|----------------|----------|
+| 0.783722| 0.749610 | 0.743847 |
+
+* Best Model AIR:
+
+| Hispanic-to-White AIR | Black-to-White AIR | Asian-to-White AIR | Female-to-Male AIR |
+|-----------------------|--------------------|--------------------|--------------------|
+| | | | |
+
+### Ethical considerations
+
+* Describe potential negative impacts of using your model:
+
+   * Math or software problems: Please polish: One sentence description, 70% accuracy rate, which means a 30% errors
+  
+   * Real-world risks: who, what, when or how: Please polish: One sentence description, bias
+  
+* Describe potential uncertainties relating to the impacts of using your model:
+
+   * Math or software problems: Please polish: One sentence description, need for ongoing monitoring as we don't know how the model will function
+  
+   * Real-world risks: who, what, when or how? Please polish: One sentence description, Data privacy and security 
+  
+*  Describe any unexpected or results: Please polish: One sentence description, no missing values and PAY_0 being too important
+
+
+
+
+
+
+
+
 
 
 ### Ethical considerations
